@@ -5,6 +5,58 @@
         <title>Menu</title>
         
         <style>
+            ul {
+              margin: 0px;  
+            }
+            a {
+                
+            }
+            header {
+                width: 955px;
+                height: 95px;                    
+            }
+            nav{
+                width: 955px;
+                background-color: #5D240A;
+                padding: 5px;                
+                
+            }
+            nav ul{
+                list-style: none;
+                margin: 0;
+                padding: 4px;
+            }
+            nav ul li{
+                display: inline-block;
+            }
+            nav ul li a{
+                color: aliceblue;
+                font-size: 0.95em;                
+                text-decoration: none;
+                padding: 4px 20px;
+                
+            }
+            nav ul li a:hover{
+                background-color: #B4531A;
+            }
+            
+            article{
+                padding: 30px;
+                float: left;
+                width: 500px; margin: 10px;
+            }
+            article header {
+                 
+            }
+            h1, h2, h4 { font-family:Georgia, "Times New Roman", Times, serif; color:#C63; font-style:italic; letter-spacing:-0.02em }
+            h1 { font-size:2.5em; margin:0 5px; }
+            h4 { font-size:1.5em; margin:20px 5px; }
+            p, li { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:0.9em; color:#555; line-height:1.8 }    
+            
+            footer {
+                clear: both; text-align: center; background-color:cornsilk;
+                margin: auto; padding: 4px; width: 500px;
+            }
             
         </style> 
 	</head>
@@ -12,26 +64,32 @@
     <body>
         <main>
             <!-- adicionar header -->
+            <header>
                 <img src="../imagens/topo_principal.jpg">
+            </header>
             <!-- finalizar header -->
 
             <!-- adicionar nav -->
+            <nav>
                 <ul>
                   <li><a href="home.html">Home</a></li>
                   <li><a href="info.html">Info</a></li>
-                  <li><a href="special-events.html">Special Events</a></li>
+                  <li><a href="special_events.html">Special Events</a></li>
                   <li><a href="dvd.html">DVD</a></li>
-                  <li><a href="location.htm">Location</a></li>
+                  <li><a href="location.html">Location</a></li>
                   <li><a href="menu.html">Menu</a></li>
                   <li><a href="review.html">Review</a></li>
                 </ul>
+            </nav>    
             <!-- finalizar nav -->
 
             <!-- adicionar article -->
+            <article>
                 <!-- adicionar header -->
+                <header>
                     <h1>Menu</h1>
+                </header>
                 <!-- finalizar header -->
-                
                 <h4>Appetizers</h4>
                 <p><img src="../imagens/appetizer.jpg" width="475" height="102" alt=""/></p>
                 <ul>
@@ -68,9 +126,11 @@
                   <li>Alaskan Halibut with a Rich Loire Valley Beurre Blanc Sauce - served with mashed purple Peruvian potatoes and haricot verts.</li>
                   <li>Recommended pairing: '98 Passi Emilio Vineyards Sauvignon Blanc </li>
                 </ul>
+            </article>        
             <!-- finalizar article -->
 
             <!-- adicionar div de apoio -->
+            <div class="apoio">
                 <section class="fotos_apoio">
                     <h2>Mapa</h2>
                     <img src="../imagens/mapa_como_chegar.gif" width="275" height="299" />
@@ -85,11 +145,14 @@
                     <h2>Vinhos</h2>
                     <img src="../imagens/vinhos.jpg" width="275" height="203" />    
                 </section>
+            </div>    
             <!-- finalizar div de apoio -->
 
             <!-- adicionar rodape -->
+            <footer>
                 <p>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</p>
                 <p><small>&copy Copyright 2015 - iMedia Brasil todos os direitos reservados.</small></p>
+            </footer>    
             <!-- finalizar rodape -->
         </main>
 		

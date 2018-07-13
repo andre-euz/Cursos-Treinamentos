@@ -4,16 +4,44 @@
         <meta charset="UTF-8">
         <title>Special Events</title>
         <style>
+            ul {
+              margin: 0px;  
+            }
+            a {
+                
+            }
+            header {
+                width: 955px;
+                height: 95px;    
+            }
+            nav{
+                width: 955px;
+                background-color: #5D240A;
+                padding: 5px;
+                
+            }
+            nav ul{
+                list-style: none;
+                margin: 0;
+                padding: 4px;
+            }
+            nav ul li{
+                display: inline-block;
+            }
+            nav ul li a{
+                color: aliceblue;
+                font-size: 0.95em;                
+                text-decoration: none;
+                padding: 4px 20px;
+                
+            }
+            nav ul li a:hover{
+                background-color: #B4531A;
+            }
             html { background-color:#F6F6F6 }
             
             main { width:955px; margin:-1px auto 10px; border:1px solid #ddd; background-color:#FFF; font-family:Arial, Helvetica, sans-serif }
             header { width:955px; height:95px }
-            
-            nav { width: 955px; background-color: #5D240A }
-            nav ul { list-style:none; margin:0; padding:4px }
-            nav ul li { display:inline-block }
-            nav ul li a { font-size: 0.85em; text-decoration: none; color: #FFF; padding: 4px 20px }
-            nav ul li a:hover { background-color: #B4531A }
             
             article { float:left; margin:30px 20px; width:600px }
             
@@ -28,9 +56,10 @@
             
             aside {
                 float:left;
-                width:230px;
+                width:220px;
                 border-top:1px solid #CC6633;
                 border-bottom:1px solid #CC6633;
+                border-right: 1px solid #CC6633;
                 padding:40px 10px 0;
                 font-style: italic;
                 margin-right: 20px;
@@ -55,11 +84,11 @@
 
     <body>
         <main>
-            <!-- adicionar header -->
+            <header>
                 <img src="../imagens/topo_principal.jpg">
-            <!-- finalizar header -->
+            </header>
             
-            <!-- adicionar nav -->
+            <nav>
                 <ul>
                   <li><a href="home.html">Home</a></li>
                   <li><a href="info.html">Info</a></li>
@@ -69,14 +98,17 @@
                   <li><a href="menu.html">Menu</a></li>
                   <li><a href="review.html">Review</a></li>
                 </ul>
-            <!-- finalizar nav -->
+            </nav>
     
-            <!-- adicionar article -->
-                <!-- adicionar header -->
+            <article>
+                <header>
                     <h1>Special Events</h1>
-                <!-- finalizar header -->
+                </header>
                 
                 <h2>Our Invitation to You </h2>
+                <aside>
+                    <p>In keeping with the award-winning cuisine and exceptional service you expect, we provide place cards, personally printed menus, and candles. We are also happy to help you arrange other services</p>    
+                </aside>
                 <p>We want to share the elegant private dining room at the <b>Cafe Fontenebleau</b> flagship restaurant with you! Set in a unique, historic building in <i>Paris</i>, our private dining room is available to host your corporate events, parties, weddings, and more. </p>
                 <p>Our special events manager, sommelier, and executive chef will work with you to make sure your special event is truly special. We offer multiple menu options, or we can customize a menu for you.  In keeping with the award-winning cuisine and exceptional service you expect, we provide place cards, personally printed menus, and candles. We are also happy to help you arrange other services.</p>
                 <p>Our unique setting, highly personalized service, and memorable dining are the perfect combination for your special event! Please contact us for more information! </p>
@@ -104,9 +136,9 @@
                 </ul>
                 <hr width="50%" size="1" color="#E10B0F" />
                 <p>Cafe Fontenebleu <sup>&reg;</sup></p>
-            <!-- finalizar article -->
+            </article>
 
-            <!-- adicionar div de apoio -->
+            <div class="apoio">
                 <section>
                     <h2>Mapa</h2>
                     <img src="../imagens/mapa_como_chegar.gif">
@@ -121,12 +153,12 @@
                     <h2>Vinho</h2>
                     <img src="../imagens/vinhos.jpg" width="275" height="163" alt=""/> 
                 </section>
-            <!-- finalizar div de apoio -->
+            </div>
 
-            <!-- adicionar rodape -->
+            <footer>
                 <p>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</p>
                 <p><small>&copy Copyright 2015 - iMedia Brasil todos os direitos reservados.</small></p>
-            <!-- finalizar rodape -->
+            </footer>
             
 		  </main>
     </body>
