@@ -9,23 +9,49 @@
                 font-size:13px;
             }
 
-            ul { margin:0;padding:0;list-style:none }
+            ul { 
+                margin:0;padding:0;list-style:none;
+                width: 200px;                
+            }
+            ul li{
+                
+                margin-bottom: -1px;
+                background-color: cornflowerblue;
+                height: 30px;
+                margin-bottom: 1px;
+                
+                    
+            }
+            ul li:nth-child(odd){
+                background-color: darkgrey;
+            }
+            ul li:nth-child(even){
+                background-color: grey;
+            }
+            ul li a{
+                text-decoration: none;
+                color: #FFF;
+                
+            }
+            ul li:hover {
+                background-color: #ddd;
+            }
 
         </style>
     </head>
 
     <body>
         <ul>
-            <li>Brasil</li>
-            <li>Portugal</li>
-            <li>Angola</li>
-            <li>Moçambique</li>
-            <li>Cabo Verde</li>
-            <li>Guiné-Bissau</li>
-            <li>Timor-Leste</li>
-            <li>Guiné Equatorial</li>
-            <li>Sao Tomé e Principe</li>
-            <li>Macau</li>
+            <li><a href="#">Brasil</a></li>
+            <li><a href="#">Portugal</a></li>
+            <li><a href="#">Angola</a></li>
+            <li><a href="#">Moçambiqu</a></li>
+            <li><a href="#">Cabo Verde</a></li>
+            <li><a href="#">Guiné-Bissau</a></li>
+            <li><a href="#">Timor-Leste</a></li>
+            <li><a href="#">Guiné Equatorial</a></li>
+            <li><a href="#">Sao Tomé e Principe</a></li>
+            <li><a href="#">Macau</a></li>
         </ul>
     </body>
 </html>
