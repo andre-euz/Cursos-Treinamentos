@@ -2,7 +2,20 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-        
+            /*função de execução*/
+            function escreverNome(){
+                console.log("André Rodrigo Euzébio");
+            }
+            
+            escreverNome();
+            /*função de retorno*/
+            function converterTemperatura(celsius){
+                var fah = (celsius*1.8)+32;
+                return fah;
+            }
+            celsius = converterTemperatura(50);
+
+            console.log(celsius);
         </script>
     </head>
     <body>
