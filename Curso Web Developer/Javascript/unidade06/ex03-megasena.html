@@ -2,6 +2,41 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            //Exercicio
+            var sorteio;
+            var mega = new Array();
+            var i = 0;
+            
+            function ordernarNumeros(a,b){
+                return a-b;
+            }  
+            
+            while (i < 6) {
+                sorteio = Math.ceil(Math.random()*60);
+                if (mega.indexOf(sorteio) < 0) {                    
+                    mega.push(sorteio);                                        
+                    i++;
+                }
+                
+            } 
+            mega.sort(ordernarNumeros);
+            console.log(mega);
+            
+            //Como eu fiz
+            var sorteio;
+            var verificaSorteio = 0;
+            var mega = new Array();
+            var i = 0;
+            while (i < 6) {
+                sorteio = Math.ceil(Math.random()*60);
+                if (sorteio != verificaSorteio) {                    
+                    mega.push(sorteio);                    
+                    verificaSorteio = sorteio;
+                    i++;
+                }
+                
+            }            
+            console.log(mega);
 
         </script>
     </head>
