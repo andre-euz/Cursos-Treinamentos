@@ -2,7 +2,28 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var produto = new Object();
+            
+            produto.nome = "Caneta";
+            produto.preco = 1.99;
+            produto.cor = "Azul";
+            
+            var carro = new Object();
+            
+            carro.marca = "Honda";
+            carro.modelo = "Civic";
+            carro.cor = "Vermelho";
+            
+            function retornarInfo() {
+                return this.cor;
+            }
+            
+            
+            produto.info = retornarInfo;
+            carro.info = retornarInfo;
+            
+            console.log(produto.info());
+            console.log(carro.info());
         </script>
     </head>
     <body>
