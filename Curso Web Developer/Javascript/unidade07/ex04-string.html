@@ -2,7 +2,63 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            // Maiúscula
+            var nome = "andré rodrigo euzébio";
+            console.log(nome.toUpperCase());
+            
+            // Minúscula
+            var nome = "ANDRÉ RODRIGO EUZÉBIO";
+            console.log(nome.toLowerCase());
+            
+            // Nome próprio
+            var nome = "andré rodrigo euzébio";
+          
+            var i = 0;
+            var nomes = new Array();
+            var letrasMinusculas = nome.toLowerCase();
+            var tamanhoArray = letrasMinusculas.split(" ").length;
+            var nomeCorreto = "";
+            while (i < tamanhoArray) {
+                var quebrado = letrasMinusculas.split(" ")[i];  
+                var primeira = quebrado.charAt(0).toUpperCase();
+                var tamanhoNome = quebrado.length;
+                //nomes[i] = primeira+quebrado.substr(1,tamanhoNome);
+                if (i < tamanhoArray - 1) {
+                    nomeCorreto += primeira+quebrado.substr(1,tamanhoNome)+" ";     
+                }
+                else{
+                    nomeCorreto += primeira+quebrado.substr(1,tamanhoNome);     
+                }                
+                i++
+            }            
+            console.log(nomeCorreto);
+            
+            /* Função feita por outro aluno do curso para capitalizar nome*/
+            /*function capitalizar(parametro) {
+              var palavras = parametro.toLowerCase().split(" ");
+              var nomeCapitalizado = "";
+                n = palavras.length;
+              for (i = 0; i < palavras.length; i++) {
+                if (i < (palavras.length - 1 )) {
+                  if (palavras[i].length > 3) {
+                    nomeCapitalizado += palavras[i].charAt(0).toUpperCase() + palavras[i].substr(1, palavras[i].length) + " ";
+                  } else {
+                    nomeCapitalizado += palavras[i] + " ";
+                  }
+                } else {
+                  nomeCapitalizado += palavras[i].charAt(0).toUpperCase() + palavras[i].substr(1, palavras[i].length);
+                }   
+                  console.log(i);
+                  console.log(n);
+              }
+                
+                
+                
+              return nomeCapitalizado;
+            }
+            var n;
+            console.log(capitalizar("andré rodrigo euzébio dos anjos"));*/
+            
         </script>
     </head>
     <body>
