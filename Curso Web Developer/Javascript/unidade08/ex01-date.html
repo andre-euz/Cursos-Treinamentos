@@ -2,7 +2,16 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var meses = ["1","2","3","4","5",
+                         "Janeiro","Fevereiro","Março","Abril"];
+            var agora = new Date();
+            console.log(agora.getFullYear());
+            console.log(agora.getMonth());
+            console.log(agora.getDay());            
+            console.log(meses[agora.getMonth()]);
+            
+            var aniversario = new Date(1995,06,18);
+            console.log(aniversario.getDay());
             
         </script>
     </head>
