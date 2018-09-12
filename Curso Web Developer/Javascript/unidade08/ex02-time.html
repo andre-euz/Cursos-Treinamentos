@@ -2,7 +2,21 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            function retornaDoisDigitos(tempo){
+                if (tempo < 10) {
+                    return "0"+tempo;
+                }
+                else {
+                    return tempo;
+                }
+            }
+            var agora = new Date();
+            console.log(retornaDoisDigitos(agora.getHours())
+                        +":"+retornaDoisDigitos(agora.getMinutes())
+                        +":"+retornaDoisDigitos(agora.getSeconds()));
             
+            var aniversario = new Date(1995,06,18,5,6,2,1);
+            console.log(aniversario.getHours())
         </script>
     </head>
     <body>
